@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Nikita Chernovets || Front-End Developer</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <h1 class="header__title">Nikita Chernovets</h1>
+        <div class="sosial-links">
+          <a href="https://www.linkedin.com/in/nickarmfield/"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:bizzyn3@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="container">
+      <div class="cover">
+        <section class="profile">
+          <div class="profile-bg">
+            <div class="profile-img"><img src="/assets/img/rs-ava.png" alt=""></div>
+            <div class="profile-name">
+              <h2>Nikita Chernovets</h2>
+              <h4>Front-End Developer</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section">
+          <div class="about__summary">
+            <h2 class="title">Summary</h2>
+            <p>Hello everyone. My name is Nikita. I am 28 years old. I live in Minsk. I have a higher musical education. Right now I work for a company that develops information security software as a webmaster.</p>
+          </div>
+          <div class="about__info">
+            <div class="about__info-items">
+              <div class="about__info-item--right">Age</div>
+              <div class="about__info-item">28</div>
+              <div class="about__info-item--right">Email</div>
+              <div class="about__info-item">bizzyn3@gmail.com</div>
+              <div class="about__info-item--right">Phone</div>
+              <div class="about__info-item">+375 (44) 774-59-47</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills section">
+          <div class="skills__header">
+            <h2 class="title">Professional Skills</h2>
+          </div>
+          <div class="skills__items">
+            <div class="skills__item">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-sass"></i>
+              <span>SCSS</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-gulp"></i>
+              <span>Gulp</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-apple"></i>
+              <span>MacOS</span>,
+              <i class="fab fa-windows"></i>
+              <span>Windows</span>,
+              <i class="fab fa-ubuntu"></i>
+              <span>Linux</span>
+            </div>
+            <div class="skills__item">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="skills__item">
+              <i class="fas fa-laptop-code"></i>
+              <span>VS Code</span>
+              <span>Sublime</span>
+              <span>PHPStorm</span>
+            </div>
+          </div>
+        </section>
+        
+        <section class="code section">
+          <div class="code__inner">
+            <h2 class="title">Code example</h2>
+            <pre class="hljs">
+              $(<span class="hljs-string">".databank_item"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">"clicked"</span>);
+                <span class="hljs-keyword">if</span> ($(<span class="hljs-keyword">this</span>).hasClass(<span class="hljs-string">'databank_subitem'</span>)) {
+                  $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">'.folder'</span>).toggleClass(<span class="hljs-string">'mdi-folder-open-outline mdi-folder-outline'</span>);
+                } <span class="hljs-keyword">else</span> {
+                  $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">'.folder'</span>).toggleClass(<span class="hljs-string">'mdi-folder-open mdi-folder'</span>);
+                }
+                $(<span class="hljs-keyword">this</span>).parent(<span class="hljs-string">"li"</span>).children(<span class="hljs-string">"ul"</span>).toggle();
+              });
+            </pre>
+          </div>
+        </section>
+        
+        <section class="edu section">
+          <div class="edu__inner">
+            <h2 class="title">Education</h2>
+          </div>
+          <div class="edu__timeline">
+            <div class="edu__timeline-card card-success">
+              <div class="card-body">
+                <div class="edu-head">Shirokov's Institute of Contemporary Knowledge
+                  <span class="text-small">Bachelor,Baku city</span>
+                </div>
+                <div class="edu-time">2011 - 2016</div>
+                <div>Variety art. Instrumental music.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="edu section">
+          <div class="edu__inner">
+            <h2 class="title">Experience</h2>
+          </div>
+          <div class="edu__timeline">
+            <div class="edu__timeline-card card-success">
+              <div class="card-body">
+                <div class="edu-head">Texode</div>
+                <div class="edu-time">2017 - Present</div>
+                <div>Texode is a software development company that specializes in software solutions of any complexity</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="edu section">
+          <div class="edu__inner">
+            <h2 class="title">Languages</h2>
+          </div>
+          <div class="edu__timeline">
+            <div class="edu__timeline-card card-success">
+              <div class="card-body">
+                <div class="edu-head">English</div>
+                <div class="mb-1"><span class="bold">B-2</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="author"><a href="mailto:bizzyn3@gmail.com" target="_blank"> &copy; Nikita Chernovets</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
