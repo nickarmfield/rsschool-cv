@@ -32,8 +32,7 @@
             </div>
           </div>
         </section>
-
-        <section class="about section">
+        <section class="about__section">
           <div class="about__summary">
             <h2 class="title">Summary</h2>
             <p>Hello everyone. My name is Nikita. I am 28 years old. I live in Minsk. I have a higher musical education. Right now I work for a company that develops information security software as a webmaster.</p>
@@ -49,8 +48,7 @@
             </div>
           </div>
         </section>
-
-        <section class="skills section">
+        <section class="skills__section">
           <div class="skills__header">
             <h2 class="title">Professional Skills</h2>
           </div>
@@ -99,25 +97,23 @@
             </div>
           </div>
         </section>
-        
-        <section class="code section">
+        <section class="code__section">
           <div class="code__inner">
             <h2 class="title">Code example</h2>
             <pre class="hljs">
-              $(<span class="hljs-string">".databank_item"</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">"clicked"</span>);
-                <span class="hljs-keyword">if</span> ($(<span class="hljs-keyword">this</span>).hasClass(<span class="hljs-string">'databank_subitem'</span>)) {
-                  $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">'.folder'</span>).toggleClass(<span class="hljs-string">'mdi-folder-open-outline mdi-folder-outline'</span>);
-                } <span class="hljs-keyword">else</span> {
-                  $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">'.folder'</span>).toggleClass(<span class="hljs-string">'mdi-folder-open mdi-folder'</span>);
+              $(".databank_item").click(function () {
+                $(this).toggleClass("clicked");
+                if ($(this).hasClass('databank_subitem')) {
+                    $(this).find('.folder').toggleClass('mdi-folder-open-outline mdi-folder-outline');
+                } else {
+                    $(this).find('.folder').toggleClass('mdi-folder-open mdi-folder');
                 }
-                $(<span class="hljs-keyword">this</span>).parent(<span class="hljs-string">"li"</span>).children(<span class="hljs-string">"ul"</span>).toggle();
+                $(this).parent("li").children("ul").toggle();
               });
             </pre>
           </div>
         </section>
-        
-        <section class="edu section">
+        <section class="edu__section">
           <div class="edu__inner">
             <h2 class="title">Education</h2>
           </div>
@@ -133,8 +129,7 @@
             </div>
           </div>
         </section>
-        
-        <section class="edu section">
+        <section class="edu__section">
           <div class="edu__inner">
             <h2 class="title">Experience</h2>
           </div>
@@ -149,7 +144,7 @@
           </div>
         </section>
         
-        <section class="edu section">
+        <section class="edu__section">
           <div class="edu__inner">
             <h2 class="title">Languages</h2>
           </div>
