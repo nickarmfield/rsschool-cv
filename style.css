@@ -121,12 +121,12 @@ body {
 .profile-img:hover {
   top: 55px;
 }
-.profile-name h2 {
+.profile-name h1 {
   font-size: 40px;
   color: #434a54;
   letter-spacing: 4px;
 }
-.profile-name h4 {
+.profile-name h2 {
   font-size: 18px;
   color: #434a54;
   letter-spacing: 4px;
